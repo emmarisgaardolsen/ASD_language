@@ -20,7 +20,7 @@ This repository contains code for three distinct types of feature extraction.
 
 The first is extracting acoustic features with openSMILE. This step can be replicated by running the code in the notebook `opensmile_features.ipynb`. The code was written and tested on a Macbook Pro with an M1 chip (16 GB RAM) running the macOS Sonoma 14.1 operating system. The use of a notebook environment for this task was necessitated by certain compatibility considerations between the Macbook hardware and the OpenSMILE software. The specific nature of these compatibility issues is currently under investigation. 
 
-The second is extracting the median fundamental frequency (f0) and fo variability (IQR) for each conversational turn based on a) the diarised corpus `data/TurnTakingData.csv` and b) the f0 extraction files in the folder `data/f0_extracted` (these files were extracted using `Praat` from the full session wav). To do this, run the following script (the outputted data will be stored in `outputs/TurnTakingData_f0.csv`):
+The second is extracting the median fundamental frequency (f0) and f0 variability (IQR) for each conversational turn based on a) the diarised corpus `data/TurnTakingData.csv` and b) the f0 extraction files in the folder `data/f0_extracted` (these files were extracted using `Praat` from the full session wav). To do this, run the following script (the outputted data will be stored in `outputs/TurnTakingData_f0.csv`):
 
 ```
 python src/fundamental_freq.py
