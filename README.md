@@ -22,13 +22,13 @@ The data was structured in the following manner, and running the code requires y
 
 
 ```
-├── data                                         Not in repository
+├── data                                         Not in repository                                      
 │   ├── CDS_wavs 
 │   ├── CDS_wavs 
 │           └── childname_Visit_X.wav
 │           └── ...
 │       └── f0_extracted
-│           └── childname_Visit_X_f0.txt         Extracted fundamental frequency
+│           └── childname_Visit_X_f0.txt         Extracted fundamental frequency (not diarised)
 │           └── ...
 │       └── textgrid
 │           └── childname_Visit_X.TextGrid       TextGrid files from Praat
