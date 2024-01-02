@@ -39,7 +39,7 @@ The data was structured in the following manner, and running the code requires y
 │       └── fundamental_freq.py                  Script for summarising fundamental frequency
 │       └── vowels.py                            Script for extracting articulation rate
 │       └── nbs                                   
-│           └── ...                              Notebooks corresponding to the 
+│           └── ...                              Notebooks corresponding to the scripts
 ├── README.md
 ├── requirements.txt
 ├── setup.sh
