@@ -2,7 +2,7 @@ import textgrid
 import os
 import pandas as pd
 from pathlib import Path
-
+import numpy as np
 
 def read_textgrid_file(path):
     """
@@ -92,6 +92,24 @@ def get_textgrid(row):
     
     return tg_path
 
+def calculate_articulation_rate(df):
+    """
+    Calculates the articulation rate for each row in a DataFrame. If duration - pauses is zero,
+    assigns NaN to that row in the articulation_rate column.
+
+    :param df: A pandas DataFrame with columns 'SyllableCount', 'StartTimeSec', 'EndTimeSec', and 'PauseDuration'.
+    :return: A pandas Series with the articulation rate for each row or NaN where duration - pauses is zero.
+    """
+    
+    # calculate the duration for each row
+    duration = df['EndTimeSec'] - df['StartTimeSec']
+
+    # calculate articulation rate, handling cases where duration - pauses is zero
+    articulation_rate = df['SyllableCount'] / (duration - df['PauseDuration'])
+    articulation_rate[duration - df['PauseDuration'] == 0] = np.nan
+    
+    return articulation_rate
+
 
 if __name__ == '__main__':
     
@@ -137,6 +155,9 @@ if __name__ == '__main__':
         # add pause duration to dataframe
         df.loc[index, 'PauseDuration'] = pause_duration
         
+        articulation_rate = calculate_articulation_rate(df.loc[[index]])
+        df.loc[index, 'ArticulationRate'] = articulation_rate.iloc[0]
+
     # save dataframe 
     output_csv_file = os.path.join(parent_dir, 'outputs', 'TurnTakingData_articulation.csv')
     df.to_csv(output_csv_file, index=False)
