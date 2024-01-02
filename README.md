@@ -35,11 +35,10 @@ The data was structured in the following manner, and running the code requires y
 │           └── ...
 │       └── TurnTakingData.csv                   Diarised corpus
 │   └── src 
-│       └── opensmile.py                         Script for extracting eGeMAPSv02 features with opensmile 
+│       └── opensmile_features.ipynb             Notebook for extracting eGeMAPSv02 features with opensmile 
 │       └── fundamental_freq.py                  Script for summarising fundamental frequency
 │       └── vowels.py                            Script for extracting articulation rate
-│       └── nbs                                   
-│           └── ...                              Notebooks corresponding to the scripts
+
 ├── outputs                                      Outputs from running the scripts
 ├── README.md
 ├── requirements.txt
