@@ -37,7 +37,7 @@ The data was structured in the following manner, and running the code requires y
 │   └── src 
 │       └── opensmile_features.ipynb             Notebook for extracting eGeMAPSv02 features with opensmile 
 │       └── fundamental_freq.py                  Script for summarising fundamental frequency
-│       └── vowels.py                            Script for extracting articulation rate
+│       └── articulation_rate.py                 Script for extracting articulation rate
 
 ├── outputs                                      Outputs from running the scripts
 ├── README.md
