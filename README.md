@@ -38,17 +38,16 @@ The data was structured in the following manner, and running the code requires y
 
 ```
 ├── data                                         Not in repository                            
-│   ├── CDS_wavs 
-│   ├── CDS_wavs 
-│           └── childname_Visit_X.wav
-│           └── ...
-│       └── f0_extracted
-│           └── childname_Visit_X_f0.txt         Fundamental frequency (not diarised)
-│           └── ...
-│       └── textgrid
-│           └── childname_Visit_X.TextGrid       TextGrid files from Praat
-│           └── ...
-│       └── TurnTakingData.csv                   Diarised corpus
+│   └── TurnTakingData.csv                       Diarised corpus
+│   └── CDS_wavs 
+│       └── childname_Visit_X.wav
+│       └── ...
+│   └── f0_extracted
+│       └── childname_Visit_X_f0.txt             Fundamental frequency (not diarised)
+│       └── ...
+│   └── textgrid
+│       └── childname_Visit_X.TextGrid           TextGrid files from Praat
+│       └── ...
 ├── src 
 │   └── opensmile_features.ipynb                 Notebook for extracting eGeMAPSv02 features with opensmile 
 │   └── fundamental_freq.py                      Script for summarising fundamental frequency
