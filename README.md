@@ -34,11 +34,10 @@ The data was structured in the following manner, and running the code requires y
 │           └── childname_Visit_X.TextGrid       TextGrid files from Praat
 │           └── ...
 │       └── TurnTakingData.csv                   Diarised corpus
-│   └── src 
-│       └── opensmile_features.ipynb             Notebook for extracting eGeMAPSv02 features with opensmile 
-│       └── fundamental_freq.py                  Script for summarising fundamental frequency
-│       └── articulation_rate.py                 Script for extracting articulation rate
-
+├── src 
+│   └── opensmile_features.ipynb             Notebook for extracting eGeMAPSv02 features with opensmile 
+│   └── fundamental_freq.py                      Script for summarising fundamental frequency
+│   └── articulation_rate.py                     Script for extracting articulation rate
 ├── outputs                                      Outputs from running the scripts
 ├── README.md
 ├── requirements.txt
