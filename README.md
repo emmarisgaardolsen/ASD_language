@@ -40,6 +40,7 @@ The data was structured in the following manner, and running the code requires y
 │       └── vowels.py                            Script for extracting articulation rate
 │       └── nbs                                   
 │           └── ...                              Notebooks corresponding to the scripts
+├── data                                         Outputs from running the scripts
 ├── README.md
 ├── requirements.txt
 ├── setup.sh
