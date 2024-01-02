@@ -1,0 +1,11 @@
+scipy
+numpy
+matplotlib
+opensmile
+scikit-learn
+seaborn
+pandas
+ipykernel
+dropbox
+librosa
+textgrid
